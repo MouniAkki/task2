@@ -1,0 +1,76 @@
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+    body{  
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;  
+      background-color: rgb(235, 147, 195);  
+    }  
+    form {  
+        padding: 50px;  
+      background-color: rgb(157, 222, 248);  
+    }  
+      
+    input[type=text],input[type=number],select{  
+      width: 75%;  
+      padding: 15px;  
+      margin: 5px 0 22px 0;  
+      display: inline-block;  
+      border: none;  
+      background: #f1f1f1;  
+    }  
+    input[type=text]:focus, input[type=number]:focus {  
+      background-color: orange;  
+      outline: none;  
+    }  
+     br{  
+                padding: 10px 0;  
+             }  
+    hr {  
+      border: 1px solid #f1f1f1;  
+      margin-bottom: 25px;  
+    }  
+    button {  
+      background-color: #4CAF50;  
+      color: white;  
+      padding: 16px 20px;  
+      margin: 8px 0;  
+      border: none;  
+      cursor: pointer;  
+      width: 25%;  
+      opacity: 0.9;  
+    }  
+    button:hover {  
+      opacity: 1;  
+    }  
+    </style>  
+    
+</head>
+    <body>
+        <form>
+            <label>Loan Amount:</label>&nbsp;
+            <input type="text" placeholder="enter amount" size="10" name="amount" required/><br>
+            <label>Interest Rate:</label>&nbsp; &nbsp;
+            <input type="number" placeholder="Intrest rate" size="10" name="intrestr" required/><br>
+            <label>years to repay:</label>&nbsp;
+                <select>  
+                    <option value="1">1</option>  
+                    <option value="2">2</option>  
+                    <option value="3">3</option>  
+                    <option value="4">4</option>  
+                    <option value="5">5</option>  
+                    <option value="6">6</option>  
+                    <option value="7">7</option>  
+                    <option value="8">8</option>  
+                    <option value="9">9</option>  
+                    <option value="10">10</option>   
+                    </select>  
+                    
+            <br>
+            <label>Monthly pays:</label>&nbsp;
+            <input type="number" size="10" required/><br>
+            <center><button>Calculate</button></center>   
+        
+        </form>
+    </body>
+</html>
